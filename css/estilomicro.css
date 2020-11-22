@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+html{
+height: 100%}
+
+body{
+	min-height: 100%;
+}
+
+
+.logo{
+	grid-area: logo;
+	background-color: #C1D341;
+}
+
+
+.morfologia{
+	grid-area: morfologia;
+	background-color: #44B9BA;
+}
+
+
+.tipografia{
+	grid-area: tipografia;
+	background-color: pink;
+	
+}
+
+.cromatica{
+	grid-area: cromatica;
+	background-color: #9980FA;
+
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #C1D341;
+}
+
+
+/*SMARTPHONE-----------------------------------------------*/
+@media (min-width: 0px) and (max-width:600px) {
+.gridcontainer{
+display: grid;
+background-color: #C4E538;
+grid-template-areas: 
+"logo" 
+"morfologia" 
+"tipografia" 
+"cromatica" 
+"footer" 
+}
+
+.logo{
+	
+	width: 100%;
+	background-color: #C4E538;	
+}
+
+#logo2 {
+  	margin-top: 27px;
+	margin-left: 100px;
+
+ }
+
+ h1{
+ 	margin-top: 10px;
+ 	text-align: left;
+ 	margin-left: 20px;
+ 	font-family: Oswald;
+}
+
+ p{
+ 	margin-top: 10px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	text-align: justify;
+ 	font-size: 18px;
+ 	font-family: Quicksand;
+ }
+
+
+h2{	
+	margin-top: 10px;
+	text-align: center;
+	font-family: Oswald;
+}
+
+h3{
+	font-family: Raleway;
+	margin-left:20px; 
+}
+
+#fotoweb{
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+#fototablet{
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+#fotosmart{
+	margin-top: 10px;
+	margin-left: 220px;
+}
+
+#fotocroma{
+	margin-left: 150px;
+}
+
+
+.footer{
+	height: 50px;
+
+}
+
+#microweb {
+	margin-top: 5px;
+	margin-left: 250px; 
+}	
+
+
+
+
+}
+
+/*TABLET-----------------------------------------------*/
+
+@media (min-width: 601px) and (max-width: 1000px)
+{.gridcontainer {
+	background-color:#C4E538;
+	display: grid;
+	grid-template-columns: ;
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "logo		   logo"
+						  "cromatica  	tipografia"
+						  "morfologia   morfologia"
+						  "footer	    footer";}
+
+.logo{
+	height: 140px;
+	width: 100%;
+	background-color: #C4E538;
+	margin: 0;
+}
+
+.cromatica{
+	width: 500px;
+}
+
+.tipografia{
+	width: 500px;
+}
+#logo2 {
+  	margin-top: 27px;
+	margin-left: 300px;
+
+ }
+
+h1{
+ 	margin-top: 10px;
+ 	text-align: center;
+ 	font-family: Oswald;
+}
+
+ p{
+ 	margin-top: 10px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	text-align: justify;
+ 	font-size: 18px;
+ 	font-family: Quicksand;
+ }
+
+
+h2{	
+	margin-top: 10px;
+	text-align: center;
+	font-family: Oswald;
+}
+
+h3{
+	font-family: Raleway;
+	margin-left:20px; 
+}
+
+
+#fotoweb{
+	margin-top: 10px;
+	margin-left: 350px;
+}
+
+#fototablet{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+#fotosmart{
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+#fotocroma{
+	margin-left: 90px;
+}
+
+
+.footer{
+	height: 50px;
+
+}
+
+#microweb {
+	margin-top: 5px;
+	margin-left: 480px; 
+}	
+
+
+
+
+
+}
+
+
+/*COMPUTADORA-----------------------------------------------*/
+
+@media (min-width: 1001px) and (max-width: 1920px) {
+
+	.gridcontainer {
+    background-color: #EE5A24; 
+    display: grid; 
+	grid-template-columns: ;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "logo			logo 			logo " 	
+						 "morfologia    tipografia    	cromatica" 
+						 "morfologia    tipografia  	cromatica"
+						 "footer    	footer   		footer"; }
+
+
+.logo{
+	height: 140px;
+	width: 100%;
+	background-color: #C4E538;
+	margin: 0;
+}
+
+#logo2 {
+  	margin-top: 27px;
+	margin-left: 500px;
+
+ }
+
+
+ .morfologia{
+ 	margin-top: 0px;
+	width: 100%;
+	height: 640;
+		
+ }
+
+ .tipografia{
+ 	height: 640;
+ }
+
+ .cromatica{
+ 	height: 640;
+ }
+
+ h1{
+ 	margin-top: 10px;
+ 	margin-left: 20px;
+ 	font-family: Oswald;
+
+ }
+
+ p{
+ 	margin-top: 10px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ 	text-align: justify;
+ 	font-size: 18px;
+ 	font-family: Quicksand;
+ 
+ }
+
+h2{	
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: center;
+	font-family: Oswald;
+}
+
+h3{
+	font-family: Raleway;
+	margin-left:20px; 
+}
+
+#fotocroma{
+	margin-left: 80px;
+}
+
+
+#fotoweb{
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+#fototablet{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+#fotosmart{
+	margin-top: 10px;
+	margin-left: 180px;
+}
+
+
+.footer{
+	height: 50px;
+}
+
+#microweb {
+	margin-top: 5px;
+	margin-left: 660px; 
+}	
+
+
+
+
+
+
+
+
+
